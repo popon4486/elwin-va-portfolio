@@ -1,0 +1,42 @@
+.portfolio {
+  padding-block: var(--space-24);
+}
+
+.portfolio__grid {
+  display: grid;
+  gap: var(--space-6);
+  grid-template-columns: 1fr;
+}
+
+.coming-soon-card {
+  border: 2px dashed var(--color-border-strong);
+  border-radius: var(--radius-card);
+  padding: var(--space-8);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  color: var(--color-ink-muted);
+  min-height: 100%;
+}
+
+.coming-soon-card__icon {
+  font-size: 1.75rem;
+  margin-bottom: var(--space-4);
+}
+
+.coming-soon-card__title {
+  font-size: var(--fs-lg);
+  color: var(--color-secondary);
+  margin-bottom: var(--space-2);
+}
+
+.coming-soon-card__description {
+  line-height: var(--lh-relaxed);
+}
+
+@media (min-width: 700px) {
+  .portfolio__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

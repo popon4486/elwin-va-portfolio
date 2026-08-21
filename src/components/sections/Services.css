@@ -1,0 +1,21 @@
+.services {
+  padding-block: var(--space-24);
+}
+
+.services__grid {
+  display: grid;
+  gap: var(--space-6);
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 640px) {
+  .services__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1000px) {
+  .services__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

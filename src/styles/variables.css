@@ -1,0 +1,63 @@
+:root {
+  /* ── Brand colors (from the brief) ───────────────────────── */
+  --color-primary: #1c367e;      /* headings, links, primary buttons */
+  --color-primary-hover: #16295f;
+  --color-secondary: #37456b;    /* supporting text, secondary accents */
+  --color-light: #eef1f8;        /* dominant background */
+
+  /* ── Neutrals (added for contrast/readability the 3-color
+         palette alone can't provide) ─────────────────────────── */
+  --color-ink: #171a2b;          /* body text — near-black, not pure black */
+  --color-ink-muted: #565c78;    /* secondary/supporting body text */
+  --color-white: #ffffff;
+  --color-border: #dbe0ee;
+  --color-border-strong: #b9c1dd;
+
+  /* ── Typography ───────────────────────────────────────────── */
+  --font-base: 'Manrope', system-ui, -apple-system, sans-serif;
+
+  --fs-smm: 0.675rem;
+  --fs-sm: 0.875rem;   /* 14px — captions, labels */
+  --fs-base: 1rem;      /* 16px — body */
+  --fs-md: 1.125rem;    /* 18px — lead text */
+  --fs-lg: 1.375rem;    /* 22px — card titles */
+  --fs-xl: clamp(1.75rem, 1.4rem + 1.5vw, 2.5rem);   /* section headings */
+  --fs-hero: clamp(1.5rem, 1rem + 2vw, 2.75rem);  /* hero headline */
+
+  --lh-tight: 1.15;
+  --lh-normal: 1.5;
+  --lh-relaxed: 1.7;
+
+  /* ── Spacing scale ────────────────────────────────────────── */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
+  --space-12: 3rem;
+  --space-16: 4rem;
+  --space-24: 6rem;
+
+  /* ── Layout ───────────────────────────────────────────────── */
+  --max-width: 1120px;
+  --radius-card: 16px;
+  --radius-button: 999px;
+
+  /* ── Elevation ────────────────────────────────────────────── */
+  --shadow-sm: 0 1px 2px rgba(23, 26, 43, 0.06), 0 1px 1px rgba(23, 26, 43, 0.04);
+  --shadow-md: 0 8px 24px rgba(23, 26, 43, 0.08);
+  --shadow-lg: 0 16px 40px rgba(23, 26, 43, 0.12);
+
+  /* ── Motion ───────────────────────────────────────────────── */
+  --ease-standard: cubic-bezier(0.2, 0.7, 0.3, 1);
+  --duration-fast: 150ms;
+  --duration-base: 300ms;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --duration-fast: 0ms;
+    --duration-base: 0ms;
+  }
+}

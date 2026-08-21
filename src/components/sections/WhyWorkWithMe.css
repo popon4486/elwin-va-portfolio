@@ -1,0 +1,22 @@
+.why {
+  padding-block: var(--space-24);
+  background-color: var(--color-white);
+}
+
+.why__grid {
+  display: grid;
+  gap: var(--space-6);
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 640px) {
+  .why__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1000px) {
+  .why__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
